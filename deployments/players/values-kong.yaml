@@ -56,6 +56,7 @@ ingress:
   hosts:
     - paths:
       - path: /api/players
+        pathType: Prefix
         backend:
           serviceName: players
           servicePort: 9999
